@@ -28,7 +28,7 @@ header a {
 
 header a:hover {
   color: #fed136;
-  transition: .5s ease;
+  transition: color .5s ease;
 }
 
 .home {
@@ -69,8 +69,8 @@ header a:hover {
 }
 
 .home button:hover {
-  transition: .5s ease-in-out;
   transform: scale(1.2);
+  transition: transform .5s ease-in-out;
 }
 
 .services {
@@ -132,7 +132,7 @@ header a:hover {
 }
 
 .portfolio p {
-  color: #777777;
+  color: #777;
   text-align: center;
   font-size: 16px;
   font-family: "Source Sans Pro", sans-serif;
@@ -146,10 +146,9 @@ header a:hover {
   font-style: italic;
 }
 
-.portfolio h5 {
+.portfolio h3 {
   padding-top: 20px;
   font-size: 18px;
-  font-style: bold;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
@@ -168,7 +167,7 @@ header a:hover {
 }
 
 .about p {
-  color: #777777;
+  color: #777;
   text-align: center;
   font-size: 16px;
   font-family: "Source Sans Pro", sans-serif;
@@ -176,11 +175,11 @@ header a:hover {
   padding-bottom: 70px;
 }
 
-.about .right h4 {
+.about .right h3 {
   font-size: 18px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  color: #222222;
+  color: #222;
   text-transform: uppercase;
   text-align: right;
 }
@@ -188,15 +187,15 @@ header a:hover {
 .about .right p {
   font-size: 14px;
   font-family: "Source Sans Pro", sans-serif;
-  color: #777777;
+  color: #777;
   text-align: right;
 }
 
-.about .left h4 {
+.about .left h3 {
   font-size: 18px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  color: #222222;
+  color: #222;
   text-transform: uppercase;
   text-align: left;
 }
@@ -204,7 +203,7 @@ header a:hover {
 .about .left p {
   font-size: 14px;
   font-family: "Source Sans Pro", sans-serif;
-  color: #777777;
+  color: #777;
   text-align: left;
 }
 
@@ -218,7 +217,7 @@ header a:hover {
 
 .about .circle p {
   padding-top: 60px;
-  color: #FFFFFF;
+  color: #FFF;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -239,7 +238,7 @@ header a:hover {
 }
 
 .team p {
-  color: #777777;
+  color: #777;
   text-align: center;
   font-size: 16px;
   font-family: "Source Sans Pro", sans-serif;
@@ -259,11 +258,11 @@ header a:hover {
   margin: 0 auto;
 }
 
-.team h4 {
+.team h3 {
   font-size: 18px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  color: #222222;
+  color: #222;
   text-transform: uppercase;
   text-align: center;
   padding-top: 20px;
@@ -290,7 +289,7 @@ header a:hover {
 
 .contact {
   padding: 100px 0;
-  background-color: #222222;
+  background-color: #222;
   text-align: center;
 }
 
@@ -304,17 +303,14 @@ header a:hover {
 }
 
 .contact p {
-  color: #777777;
-  text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Source Sans Pro", sans-serif;
-  font-style: italic;
-  padding-bottom: 70px;
+  color: #777;
 }
 
 .contact .form-control {
   margin-bottom: 23px;
-  color: #bbbbbb;
+  color: #bbb;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
@@ -338,8 +334,8 @@ header a:hover {
 }
 
 .contact button:hover {
-  transition: .5s ease-in-out;
   transform: scale(1.2);
+  transition: transform .5s ease-in-out;
 }
 
 footer {
@@ -348,18 +344,18 @@ footer {
   display: flex;
 }
 
-p {
+footer p {
   font-size: 14px;
-  color: #555555;
+  color: #555;
   font-family: "Montserrat", sans-serif;
   padding-top: 10px;
 }
 
-.icons-footer {
+footer .icons-footer {
   text-align: center;
 }
 
-.icons-footer i {
+footer .icons-footer i {
   width: 45px;
   height: 45px;
   padding: 10px;
@@ -371,9 +367,9 @@ p {
   background-color: black;
 }
 
-.icons-footer i:hover {
+footer .icons-footer i:hover {
   background-color: #fed136;
-  border: solid #fed136;
+  border: 1px solid #fed136;
   color: black;
 }
 
@@ -398,13 +394,13 @@ p {
   .about .left p {
     text-align: center;
   }
-  .about .left h4 {
+  .about .left h3 {
     text-align: center;
   }
   .about .right p {
     text-align: center;
   }
-  .about .right h4 {
+  .about .right h3 {
     text-align: center;
   }
   .logo {
