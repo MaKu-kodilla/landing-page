@@ -88,7 +88,7 @@ header {
             transform: scale(1.20);
             transition: transform .5s ease-in-out;
         }
-    }               
+    }
 }
 .services {
     text-align: center;
@@ -108,17 +108,21 @@ header {
         font-size: 14px;
         width: 75%;
         margin: 20px auto;
-        padding-bottom: 50px;      
+        padding-bottom: 50px;
+        color:#777;
     }
     i {
+        width: 70px;
+        height: 70px;
         border: 3px solid #fed136;
         border-radius: 50%;
-        font-size: 60px;
+        font-size: 30px;
         color: $yellow;
         margin-bottom: 20px;
     }
     .fa-laptop, .fa-key, .fa-shopping-cart {
-        padding: 30px;
+        padding-top: 17px;
+        text-align: center;
     }
 }
 .portfolio {
@@ -147,6 +151,11 @@ header {
 }
 .about {
     padding-bottom: 50px;
+    img {
+        border: 6px solid #f2f2f2;
+        border-radius: 50%;
+        margin-bottom: 75px;
+    }
     h2 {
         @include main-header;
         padding-top: 100px;
@@ -180,6 +189,7 @@ header {
         border-radius: 50%;
         background-color: #fed136;
         margin: 0 auto;
+        border: 6px solid #f2f2f2;
         p {
             padding-top: 60px;
             color: #FFF;
@@ -224,7 +234,14 @@ header {
             font-size: 24px;
             border: 2px solid black;
             border-radius: 50%;
-            text-align: cetner;
+            text-align: center;
+            margin: 0 5px;
+        }
+        .fa-google-plus-g {
+        &:before {
+            display:flex;
+            justify-content: center;
+            }
         }
     }
 }
@@ -240,19 +257,19 @@ header {
         color: white;
     }
     p {
-        @include small-header-p;  
+        @include small-header-p;
+        color: #bbb;
     }
     .form-control {
         margin-bottom: 23px;
-        color: #bbb;
         text-transform: uppercase;
         font-size: 14px;
         font-weight: bold;
         font-family: $basic-font;
         &:focus {
-            border: 2px solid $yellow;
+            border: 1px solid $yellow;
+            }
         }
-    }
    textarea {
        margin-left: 10px;
     }
@@ -267,6 +284,9 @@ header {
             transition: transform .5s ease-in-out;
         }
     }
+    ::placeholder {
+        color: lightgray;
+    }
 }
 footer {
     padding: 30px 0;
@@ -278,7 +298,7 @@ footer {
         padding-top: 10px;
     }
     .icons-footer {
-        text-align: center;
+        text-align: left;
         i {
             width: 45px;
             height: 45px;   
@@ -286,13 +306,22 @@ footer {
             font-size: 24px;
             border: 2px solid black;
             border-radius: 50%;
-            margin: 0 30px;
+            margin: 0 10px;
             color: white;
             background-color: black;
             &:hover {
                 background-color: $yellow;
                 border: 1px solid $yellow;
                 color: black;
+            }
+        }
+        .fa-facebook-f {
+            text-align: center;
+        }
+        .fa-google-plus-g {
+            &:before {
+                display: flex;
+                justify-content: center;
             }
         }
     }

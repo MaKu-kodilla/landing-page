@@ -100,18 +100,22 @@ header a:hover {
   width: 75%;
   margin: 20px auto;
   padding-bottom: 50px;
+  color: #777;
 }
 
 .services i {
+  width: 70px;
+  height: 70px;
   border: 3px solid #fed136;
   border-radius: 50%;
-  font-size: 60px;
+  font-size: 30px;
   color: #fed136;
   margin-bottom: 20px;
 }
 
 .services .fa-laptop, .services .fa-key, .services .fa-shopping-cart {
-  padding: 30px;
+  padding-top: 17px;
+  text-align: center;
 }
 
 .portfolio {
@@ -155,6 +159,12 @@ header a:hover {
 
 .about {
   padding-bottom: 50px;
+}
+
+.about img {
+  border: 6px solid #f2f2f2;
+  border-radius: 50%;
+  margin-bottom: 75px;
 }
 
 .about h2 {
@@ -213,6 +223,7 @@ header a:hover {
   border-radius: 50%;
   background-color: #fed136;
   margin: 0 auto;
+  border: 6px solid #f2f2f2;
 }
 
 .about .circle p {
@@ -280,7 +291,15 @@ header a:hover {
   font-size: 24px;
   border: 2px solid black;
   border-radius: 50%;
-  text-align: cetner;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.team .icons .fa-google-plus-g:before {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .logo {
@@ -306,11 +325,11 @@ header a:hover {
   font-size: 14px;
   font-family: "Source Sans Pro", sans-serif;
   color: #777;
+  color: #bbb;
 }
 
 .contact .form-control {
   margin-bottom: 23px;
-  color: #bbb;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
@@ -318,7 +337,7 @@ header a:hover {
 }
 
 .contact .form-control:focus {
-  border: 2px solid #fed136;
+  border: 1px solid #fed136;
 }
 
 .contact textarea {
@@ -338,6 +357,18 @@ header a:hover {
   transition: transform .5s ease-in-out;
 }
 
+.contact ::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+.contact :-ms-input-placeholder {
+  color: lightgray;
+}
+
+.contact ::placeholder {
+  color: lightgray;
+}
+
 footer {
   padding: 30px 0;
   display: -ms-flexbox;
@@ -352,7 +383,7 @@ footer p {
 }
 
 footer .icons-footer {
-  text-align: center;
+  text-align: left;
 }
 
 footer .icons-footer i {
@@ -362,7 +393,7 @@ footer .icons-footer i {
   font-size: 24px;
   border: 2px solid black;
   border-radius: 50%;
-  margin: 0 30px;
+  margin: 0 10px;
   color: white;
   background-color: black;
 }
@@ -371,6 +402,17 @@ footer .icons-footer i:hover {
   background-color: #fed136;
   border: 1px solid #fed136;
   color: black;
+}
+
+footer .icons-footer .fa-facebook-f {
+  text-align: center;
+}
+
+footer .icons-footer .fa-google-plus-g:before {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media (max-width: 768px) {
