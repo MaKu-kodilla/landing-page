@@ -177,21 +177,25 @@ header {
         h3 {
             @include small-header;
             text-align: left; 
+            padding-left: 20px;
         }
         p {
             @include small-header-p;
             text-align: left;
+            padding-left: 20px;
         }
     }
     .circle {
-        height: 170px;
-        width: 170px;
+        text-align: center;
+        height: 181px;
+        width: 180px;
         border-radius: 50%;
         background-color: #fed136;
         margin: 0 auto;
         border: 6px solid #f2f2f2;
         p {
-            padding-top: 60px;
+            border-radius: 50%;
+            padding-top: 55px;
             color: #FFF;
             font-weight: bold;
             font-family: $basic-font;
@@ -298,7 +302,7 @@ footer {
         padding-top: 10px;
     }
     .icons-footer {
-        text-align: left;
+        text-align: center;
         i {
             width: 45px;
             height: 45px;   
@@ -326,18 +330,55 @@ footer {
         }
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+    .about {
+        text-align: center;
+        .left {
+            p {
+                text-align: center;
+                padding-left: 0;
+                padding-bottom: 50px;
+            }
+            h3 {
+                text-align: center;
+                padding-left: 0;
+            }
+        }
+        .right {
+            p {
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+    .logo {
+        text-align: center;
+        img {
+            padding: 20px;
+        }
+    }
+}
+@media (max-width: 767px) {
 
     header {
-        .navbar-header {
-            margin: 0 auto;
+        .navbar-header   {
+            text-align: center;
+            margin: 0 auto; 
+            width: 100%;
         }
         ul {
             display: flex;
             flex-direction: column;
             text-align: center;
             margin: 0 auto;
-        }              
+        }
+    }
+    .home {
+        h2 {
+            font-size: 50px;
+        }
     }
     .about {
         text-align: center;

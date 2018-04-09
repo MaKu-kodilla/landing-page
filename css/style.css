@@ -208,6 +208,7 @@ header a:hover {
   color: #222;
   text-transform: uppercase;
   text-align: left;
+  padding-left: 20px;
 }
 
 .about .left p {
@@ -215,11 +216,13 @@ header a:hover {
   font-family: "Source Sans Pro", sans-serif;
   color: #777;
   text-align: left;
+  padding-left: 20px;
 }
 
 .about .circle {
-  height: 170px;
-  width: 170px;
+  text-align: center;
+  height: 181px;
+  width: 180px;
   border-radius: 50%;
   background-color: #fed136;
   margin: 0 auto;
@@ -227,7 +230,8 @@ header a:hover {
 }
 
 .about .circle p {
-  padding-top: 60px;
+  border-radius: 50%;
+  padding-top: 55px;
   color: #FFF;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -383,7 +387,7 @@ footer p {
 }
 
 footer .icons-footer {
-  text-align: left;
+  text-align: center;
 }
 
 footer .icons-footer i {
@@ -415,9 +419,38 @@ footer .icons-footer .fa-google-plus-g:before {
       justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .about {
+    text-align: center;
+  }
+  .about .left p {
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 50px;
+  }
+  .about .left h3 {
+    text-align: center;
+    padding-left: 0;
+  }
+  .about .right p {
+    text-align: center;
+  }
+  .about .right h3 {
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .logo img {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
   header .navbar-header {
+    text-align: center;
     margin: 0 auto;
+    width: 100%;
   }
   header ul {
     display: -ms-flexbox;
@@ -426,6 +459,9 @@ footer .icons-footer .fa-google-plus-g:before {
         flex-direction: column;
     text-align: center;
     margin: 0 auto;
+  }
+  .home h2 {
+    font-size: 50px;
   }
   .about {
     text-align: center;
